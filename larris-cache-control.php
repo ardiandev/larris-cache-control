@@ -1,10 +1,15 @@
 <?php
 /*
 Plugin Name: Larris Cache Control
-Description: Adds an admin switch to control cache clearing and trigger redetach on pattern updates.
+Plugin URI: https://github.com/ardiandev/larris-cache-control
+Description: Adds an admin panel switch to control cache clearing.
 Version: 1.0
-Author: Your Name
+Author: Ardian Pradana
+Author URI: https://ardianpradana.com/
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
+
 
 add_action('admin_enqueue_scripts', function () {
     wp_enqueue_style('larris-cache-style', plugin_dir_url(__FILE__) . 'cache-control.css');
